@@ -14,7 +14,7 @@ Object.defineProperties(interpreter, {
         let [ins, dat] = [c.ins, c.dat];
         for (let step in ins) {
             let [i, a] = step;
-            match (i) {
+            switch (i) {
                 case "load":
                     this.load(a);
                     break;
